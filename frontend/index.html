@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marketing Campaign Analytics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Marketing Campaign Analytics</h1>
+        <p>Campaign Attribution and ROI Analysis Dashboard</p>
+    </header>
+
+    <main>
+
+        <!-- Summary Cards -->
+        <section class="summary">
+
+            <div class="card">
+                <h3>Total Campaign Spend</h3>
+                <h2 id="totalSpend">Loading...</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <h2 id="totalRevenue">Loading...</h2>
+            </div>
+
+            <div class="card">
+                <h3>Overall ROI</h3>
+                <h2 id="overallROI">Loading...</h2>
+            </div>
+
+        </section>
+
+        <!-- Attribution Revenue Chart -->
+        <section class="chart-section">
+
+            <h2>Campaign-wise Attribution Revenue</h2>
+
+            <div class="chart-card">
+                <canvas id="attributionChart"></canvas>
+            </div>
+
+        </section>
+
+        <!-- ROI Comparison Chart -->
+        <section class="chart-section">
+
+            <h2>Campaign-wise ROI Comparison</h2>
+
+            <div class="chart-card">
+                <canvas id="roiChart"></canvas>
+            </div>
+
+        </section>
+
+        <!-- Campaign Performance Table -->
+        <section class="table-section">
+
+            <h2>Campaign Performance</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Campaign</th>
+                            <th>Spend</th>
+                            <th>First Touch ROI</th>
+                            <th>Last Touch ROI</th>
+                            <th>Linear ROI</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="campaignTable">
+
+                        <tr>
+                            <td colspan="5">Loading campaigns...</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Marketing Campaign Attribution and ROI Analysis System</p>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
